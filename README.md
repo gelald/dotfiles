@@ -128,3 +128,4 @@ p10k configure
 
 [Dotfiles - 什么是Dotfile以及如何在Mac和Linux中创建它](https://juejin.cn/post/7023216265825107981)
 
+[如何在Mac上利用rcm优雅地管理dotfiles配置文件](https://blog.csdn.net/qq_43827595/article/details/107459146)
