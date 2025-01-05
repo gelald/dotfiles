@@ -15,8 +15,8 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-#ZSH_THEME="robbyrussell"
-ZSH_THEME="powerlevel10k/powerlevel10k"
+ZSH_THEME="robbyrussell"
+# ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -179,3 +179,14 @@ function remove_temp_alias() {
 # if you wanna automatically execute when system started
 # we can modify the LoginHook, just like that: `sudo defaults write com.apple.loginwindow LoginHook ~/cmd/lo0_alias.sh`
 ########## operate IP address temporary alias ##########
+
+# pnpm
+export PNPM_HOME="/Users/ngwingbun/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
+# starship
+eval "$(starship init zsh)"
