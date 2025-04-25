@@ -188,5 +188,10 @@ case ":$PATH:" in
 esac
 # pnpm end
 
+# vscode
+export VS_CODE_HOME='/Applications/Visual Studio Code.app/Contents/Resources/app'
+export PATH=$PATH:$VS_CODE_HOME/bin
+# vscode end
+
 # starship
 eval "$(starship init zsh)"
