@@ -195,3 +195,8 @@ export PATH=$PATH:$VS_CODE_HOME/bin
 
 # starship
 eval "$(starship init zsh)"
+# starship end
+
+# x-cmd
+[ ! -f "$HOME/.x-cmd.root/X" ] || . "$HOME/.x-cmd.root/X"
+# x-cmd end
