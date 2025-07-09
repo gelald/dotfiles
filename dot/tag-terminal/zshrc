@@ -142,7 +142,7 @@ export NVM_DIR="$HOME/.nvm"
 ########## python ##########
 #export PYTHON_HOME=/Library/Frameworks/Python.framework/Versions/3.12
 #export PATH=$PATH:$PYTHON_HOME/bin
-alias pip="pip3"
+# alias pip="pip3"
 
 ########## uv ##########
 export PATH="/Users/ngwingbun/.local/bin:$PATH"
