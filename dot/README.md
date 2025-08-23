@@ -16,7 +16,7 @@ rcm 的四个命令：
 ---
 
 ```shell
-ln dotfiles/dot/tag-terminal/zshrc ~/.zhsrc
+ln -sf dotfiles/dot/tag-shell/zshrc ~/.zhsrc
 
-ln dotfiles/dot/tag-git/gitconfig ~/.gitconfig
+ln -sf dotfiles/dot/tag-git/gitconfig ~/.gitconfig
 ```
