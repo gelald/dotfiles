@@ -16,3 +16,13 @@ rcm 生成的快捷方式都是有一个 `.` 开头的。
    ```shell
    ln -s ~/dotfiles/app_setting.json ~/app/setting.json
    ```
+
+---
+
+```shell
+ln -s dotfiles/non-dot/kitty ~/.config/kitty
+
+ln -s dotfiles/non-dot/starship.toml ~/.config/starship.toml
+
+# iTerm2.json 是 iTerm2 的配置文件；Nord.terminal 是 macOS Terminal 的配置文件（包含配色、字体等）
+```

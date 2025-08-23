@@ -12,3 +12,11 @@ rcm 的四个命令：
 - mkrc：将指定的 `dotfile` 移动至你的集中存储目录，并在 `~/` 目录下创建相应的符号链接
 - rcup：根据 rcm 管理的 `dotfile` 更新当前用户目录下已存在的符号链接或创建新的符号链接
 - rcdn：删除通过 rcm 创建的 `dotfile` 的符号链接
+
+---
+
+```shell
+ln dotfiles/dot/tag-terminal/zshrc ~/.zhsrc
+
+ln dotfiles/dot/tag-git/gitconfig ~/.gitconfig
+```
