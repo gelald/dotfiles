@@ -1,0 +1,20 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[safe]
+	directory = /opt/homebrew
+	directory = /opt/homebrew/Library/Taps/homebrew/homebrew-core/
+	directory = /opt/homebrew/Library/Taps/homebrew/homebrew-cask/
+	directory = /opt/homebrew/Library/Taps/homebrew/homebrew-services/
+	directory = /opt/homebrew/Library/Taps/homebrew/homebrew-core
+	directory = /opt/homebrew/Library/Taps/homebrew/homebrew-cask
+	directory = /opt/homebrew/Library/Taps/homebrew/homebrew-services
+[http]
+	sslVerify = false
+[user]
+	name = gelald
+	email = 37375083+gelald@users.noreply.github.com
+[core]
+	autocrlf = input
