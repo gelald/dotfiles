@@ -48,6 +48,8 @@ rcm 的做法存在一定的弊端：我们的配置文件除了 `dotfile` 外�
 ```shell
 ln -sf dotfiles/shell/zshrc ~/.zhsrc
 
+ln -sf dotfiles/shell/p10k.zsh ~/.p10k.zsh
+
 ln -sf dotfiles/shell/starship.toml ~/.config/starship.toml
 
 ln -sf dotfiles/git/gitconfig ~/.gitconfig
