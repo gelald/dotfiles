@@ -19,7 +19,7 @@ Unix 的系统中，`dotfile` 默认被操作系统隐藏。
 
 有一款产品：[rcm](https://github.com/thoughtbot/rcm) ，可以帮助我们完成以上事情
 
-其中 rcm 有四个命令：
+rcm 天然支持了 `dotfile` 的统一管理与迁移，**特别地，适合管理 `~/` 下的配置文件**，其中 rcm 有四个命令：
 
 - lsrc：列出当前所有通过 rcm 管理的 `dotfile` ，以及其对应的符号链接位置
 - mkrc：将指定的 `dotfile` 移动至你的集中存储目录，并在 `~/` 目录下创建相应的符号链接
@@ -42,6 +42,21 @@ rcm 的做法存在一定的弊端：我们的配置文件除了 `dotfile` 外�
    ```shell
    ln -s ~/dotfiles/base_profile ~/.bash_profile
    ```
+
+## 文件原位置
+
+```shell
+ln -sf dotfiles/shell/zshrc ~/.zhsrc
+
+ln -sf dotfiles/shell/starship.toml ~/.config/starship.toml
+
+ln -sf dotfiles/git/gitconfig ~/.gitconfig
+
+ln -sf dotfiles/terminal/kitty ~/.config/kitty
+ 
+# iTerm2.json 是 iTerm2 的配置文件；Terminal.terminal 是 macOS Terminal 的配置文件（包含配色、字体等）
+# 他们可以打开 iTerm2 或者 Terminal 来直接导入配置
+```
 
 ## 总结
 
