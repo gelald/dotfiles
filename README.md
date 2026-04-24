@@ -55,7 +55,9 @@ ln -sf dotfiles/shell/starship.toml ~/.config/starship.toml
 ln -sf dotfiles/git/gitconfig ~/.gitconfig
 
 ln -sf dotfiles/terminal/kitty ~/.config/kitty
- 
+
+ln -sf dotfiles/ai/CLAUDE.md ~/.claude/CLAUDE.md
+
 # iTerm2.json 是 iTerm2 的配置文件；Terminal.terminal 是 macOS Terminal 的配置文件（包含配色、字体等）
 # 他们可以打开 iTerm2 或者 Terminal 来直接导入配置
 ```
