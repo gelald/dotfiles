@@ -147,6 +147,13 @@ export NVM_DIR="$HOME/.nvm"
 ########## uv ##########
 export PATH="/Users/ngwingbun/.local/bin:$PATH"
 
+########## eza ###########
+alias ls='eza --icons'
+alias ll='eza -la --icons --git'
+alias lt='eza --tree --level=2 --icons'
+alias l='eza -la --icons --git --header'
+########## eza ###########
+
 ########## clashx terminal proxy config ##########
 function clash_proxy_on() {
   export https_proxy=http://127.0.0.1:7890
