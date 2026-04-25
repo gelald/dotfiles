@@ -148,11 +148,19 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="/Users/ngwingbun/.local/bin:$PATH"
 
 ########## eza ###########
-alias ls='eza --icons'
-alias ll='eza -la --icons --git'
+alias ls='eza --icons --group-directories-first'
+alias ll='eza -la --icons --group-directories-first'
 alias lt='eza --tree --level=2 --icons'
 alias l='eza -la --icons --git --header'
 ########## eza ###########
+
+########## btop ###########
+alias top='btop'
+########## btop ###########
+
+########## lazygit ###########
+alias lg='lazygit'
+########## lazygit ###########
 
 ########## clashx terminal proxy config ##########
 function clash_proxy_on() {
