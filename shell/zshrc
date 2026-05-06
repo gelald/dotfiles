@@ -119,16 +119,20 @@ source $ZSH/oh-my-zsh.sh
 
 # =========================== custom config ===========================
 
-########## java ##########
-export JAVA_8_HOME=/Library/Java/JavaVirtualMachines/jdk-1.8.jdk/Contents/Home
-export JAVA_17_HOME=/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home
-
-export JAVA_HOME=$JAVA_17_HOME
-export PATH="$JAVA_HOME:$PATH"
-
-########## jenv ##########
+########## jEnv ##########
+# 让 jEnv 管理多个版本的 JDK
+# eval "$(jenv init -)" 执行时会根据当前 jEnv 版本（global/local/shell）自动设置 JAVA_HOME
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
+# 再加上 jenv enable-plugin export，jEnv 会确保 JAVA_HOME 被 export 到子进程（如 Maven）
+
+########## java ##########
+# jEnv 管理 JAVA_HOME，不再需要手动设置
+# JAVA_HOME 已经能覆盖绝大部分场景，可以移除单独版本的 JAVA_HOME
+# export JAVA_8_HOME=$(/usr/libexec/java_home -v 1.8)
+# export JAVA_17_HOME=$(/usr/libexec/java_home -v 17)
+# export JAVA_21_HOME=$(/usr/libexec/java_home -v 21)
+# export JAVA_25_HOME=$(/usr/libexec/java_home -v 25)
 
 ########## maven ###########
 export MAVEN_HOME=/usr/local/apache-maven-3.8.8
